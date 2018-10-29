@@ -39,9 +39,9 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/vRAM0SS.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/yZupOD8.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-If walkthrough does not work in readme file [click here to open gif in browser](https://imgur.com/vRAM0SS).
+If walkthrough does not work in readme file [click here to open gif in browser](https://imgur.com/yZupOD8).
 
 ## Notes
 
