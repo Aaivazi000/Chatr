@@ -55,35 +55,15 @@ class LoginPageViewController: UIViewController {
         
         // Step 3: Call sign up function in background
         newUser.signUpInBackground { (success: Bool, error: Error?) in
-            if let error = error {
-                
-                if error._code == 202 {
-                    //Alert the user that username is taken
-                    self.userAlertController = UIAlertController(title: "Sign Up Error", message: "That username is taken. \n Please choose another.", preferredStyle: .alert)
-                    let cancelAction = UIAlertAction(title: "Ok", style: .cancel) { (action) in
-                        // do nothing to dismiss
-                    }
-                    self.userAlertController.addAction(cancelAction)
-                    self.present(self.userAlertController, animated: true, completion: nil)
+            if error != nil {
+                print(error?.localizedDescription ?? "")
+                //Alert user that some other error happened
+                self.userAlertController = UIAlertController(title: "Sign Up Error", message: "Error message: \(error!.localizedDescription)", preferredStyle: .alert)
+                let cancelAction = UIAlertAction(title: "Ok", style: .cancel) { (action) in
+                    // do nothing to dismiss
                 }
-                if (error._code == 200) || (error._code == 201) {
-                    //Alert user that one of fields is missing
-                    self.userAlertController = UIAlertController(title: "Sign Up Error", message: "One the text fields is empty. \n Please choose a username & password.", preferredStyle: .alert)
-                    let cancelAction = UIAlertAction(title: "Ok", style: .cancel) { (action) in
-                        // do nothing to dismiss
-                    }
-                    self.userAlertController.addAction(cancelAction)
-                    self.present(self.userAlertController, animated: true, completion: nil)
-                }
-                else {
-                    //Alert user that some other error happened
-                    self.userAlertController = UIAlertController(title: "Sign Up Error", message: "Error message: \(error.localizedDescription)", preferredStyle: .alert)
-                    let cancelAction = UIAlertAction(title: "Ok", style: .cancel) { (action) in
-                        // do nothing to dismiss
-                    }
-                    self.userAlertController.addAction(cancelAction)
-                    self.present(self.userAlertController, animated: true, completion: nil)
-                }
+                self.userAlertController.addAction(cancelAction)
+                self.present(self.userAlertController, animated: true, completion: nil)
             }
             else {
                 // Alert User that they were signed up successfully

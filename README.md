@@ -9,42 +9,43 @@ Time spent: **X** hours spent in total
 
 The following **required** user stories are complete:
 
-- [ ] User can sign up and sign in to the login screen (+1pt)
-- [ ] User sees alerts for login exceptions, i.e. "account already exists", "wrong credentials", etc. (+1pt)
-- [ ] User can compose and send chat messages (+2pt)
-- [ ] User can view a list of chat messages in chronological order (+2pt)
-- [ ] Automatically Adjust Cell Size to Fit Text (+1pt)
-- [ ] Username of chat author is displayed in each chat message (+2pt)
-- [ ] Persist Logged in User (+1pt)
+- [x] User can sign up and sign in to the login screen (+1pt)
+- [x] User sees alerts for login exceptions, i.e. "account already exists", "wrong credentials", etc. (+1pt)
+- [x] User can compose and send chat messages (+2pt)
+- [x] User can view a list of chat messages in chronological order (+2pt)
+- [x] Automatically Adjust Cell Size to Fit Text (+1pt)
+- [x] Username of chat author is displayed in each chat message (+2pt)
+- [x] Persist Logged in User (+1pt)
 
 The following **stretch** user stories are implemented:
 
 - [ ] User sees an activity indicator while waiting for authentication (+1pt)
-- [ ] User can pull to refresh Chat feed (+1pt)
+- [x] User can pull to refresh Chat feed (+1pt)
 - [ ] Add an "Adorable Avatar" for each user by requesting an avatar from the [Adorable Avatars API](https://github.com/adorableio/avatars-api) (+2pt)
 - [ ] Chat Bubble Style Design (+3pt)
 - [ ] Expand or contract the cell layout as needed to show the chat message author (user) if it exists (+2pt)
 
 The following **additional** user stories are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality! (+1-3pts)
+- [x] Added additional error alerts for when user sign's up their account (+1-3pts)
+- [x] Created color template for the app, custom app icon, and custom launch screen so the app has a unique and fliud look.
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. How to implement the Adorable Avatars
+2. How to change to Bubble Design
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/vRAM0SS.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+If walkthrough does not work in readme file [click here to open gif in browser](https://imgur.com/vRAM0SS).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+No errors encountered.
 
 ## License
 
